@@ -1,11 +1,12 @@
 <template>
-   <div id="main"></div>
+   <div id="main">
+   </div>
 </template>
 
 <script setup lang="ts">
 import echarts from '@/utils/echarts'
 import { onMounted } from 'vue'
-function initData() {
+  function initData() {
   let myChart = echarts.init(document.getElementById('main'), null, {
     width: 600,
     height: 600

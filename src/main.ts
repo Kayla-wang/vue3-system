@@ -2,7 +2,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import * as VueRouter from 'vue-router'//vue3的写法
 import { createPinia } from 'pinia'
-import routes from "./routers"
+import routes from "./routers/index"
+import '@/styles/common.scss'
 
 const router = VueRouter.createRouter({
     history: VueRouter.createWebHashHistory(),
