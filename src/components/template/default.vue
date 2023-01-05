@@ -8,15 +8,16 @@
         <Menu/>
       </el-aside>
       <el-main>
-        <router-view/>
+        <Main/>
       </el-main>
     </el-container>
   </el-container>
 </template>
 
 <script lang="ts" setup>
-import Header from './header.vue'
-import Menu from './menu.vue'
+import Header from '../layout/header.vue'
+import Menu from '../layout/menu.vue'
+import Main from '../layout/main.vue'
 </script>
 
 <style lang="scss" scoped>
