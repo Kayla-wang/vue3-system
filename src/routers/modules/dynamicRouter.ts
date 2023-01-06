@@ -1,7 +1,7 @@
 export const dynamicRouter = [
     {
-        path: "/home",
-        component: () => import("@/components/template/default.vue")
+        path: "/dashBoard",
+        redirect: "/dashBoard"
     },
     {
         path: "/dashBoard",
