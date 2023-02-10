@@ -1,10 +1,10 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import { errorRouter } from "@/routers/errorRouter";
-import { project } from "@/routers/modules/project";
+import { dynamicRouter } from "@/routers/modules/index";
 
 const router = createRouter({
     history: createWebHashHistory(),
-    routes: [ ...project, ...errorRouter],
+    routes: [ ...dynamicRouter, ...errorRouter],
     strict: false,
     scrollBehavior: () => ({ left: 0, top: 0 })
 });

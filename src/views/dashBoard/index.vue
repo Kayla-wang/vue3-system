@@ -1,6 +1,7 @@
 <template>
 <!--   <div id="main">-->
 <!--   </div>-->
+  <svg-icon name="xianxingdaoyu" />
 </template>
 
 <script setup lang="ts">
