@@ -4,9 +4,6 @@
       <Header/>
     </el-header>
     <el-container class="container">
-      <el-aside class="aside">
-        <Menu/>
-      </el-aside>
       <el-main class="main">
         <router-view></router-view>
       </el-main>
@@ -15,8 +12,8 @@
 </template>
 
 <script lang="ts" setup>
-import Header from '../layout/header.vue'
-import Menu from '../layout/menu.vue'
+import Header from '../../components/layout/header.vue'
+import Menu from '../../components/layout/navMenu.vue'
 </script>
 
 <style lang="scss" scoped>
@@ -31,6 +28,6 @@ import Menu from '../layout/menu.vue'
 }
 .main {
   flex:1;
-  background: red;
+  //background: red;
 }
 </style>

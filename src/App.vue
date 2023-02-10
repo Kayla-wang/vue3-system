@@ -1,9 +1,8 @@
 <template>
-  <DefaultTemplate/>
+  <router-view></router-view>
 </template>
 
 <script lang="ts" setup>
-import DefaultTemplate from  "@/components/template/default.vue"
 </script>
 
 <style lang="scss" scoped>
