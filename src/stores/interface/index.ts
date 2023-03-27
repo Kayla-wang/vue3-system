@@ -1,4 +1,4 @@
 /* GlobalState */
 export interface GlobalState {
-    menuList: Menu.MenuOptions[]
+    authMenuList: Menu.MenuOptions[]
 }

@@ -3,7 +3,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    // 就能解决 ts 文件不能导入 json 文件问题
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
   // 指定一个排除列表（include的反向操作）
   "exclude": ["node_modules", "dist", "**/*.js"],

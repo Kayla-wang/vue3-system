@@ -14,10 +14,11 @@ import { project } from "./project";
 export const dynamicRouter = [
     {
         path: "/",
-        redirect: "/project"
+        redirect: "/home/dashBoard"
     },
     {
-        path: "/project",
+        path: "/home",
+        name: 'home',
         component: () => import("@/layout/template/default.vue"),
         children: project
     }
