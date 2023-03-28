@@ -1,6 +1,7 @@
 <template>
-<!--   <div id="main">-->
-<!--   </div>-->
+   <div id="main">
+     111
+   </div>
 <!--  <svg-icon name="xianxingdaoyu" />-->
 </template>
 

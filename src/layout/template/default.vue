@@ -25,7 +25,7 @@ import Menu from '@/layout/components/navMenu.vue'
   display: flex;
 }
 .aside {
-  width:100px;
+  width:180px;
   height: calc( 100vh - 50px);
 }
 .main {

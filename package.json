@@ -12,7 +12,6 @@
     "@types/node": "^18.11.10",
     "echarts": "^5.4.0",
     "element-plus": "^2.3.1",
-    "element-ui": "^2.15.9",
     "fast-glob": "^3.2.12",
     "node-sass": "^4.14.1",
     "pinia": "^2.0.23",

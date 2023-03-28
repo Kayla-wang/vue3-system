@@ -1,9 +1,12 @@
 export const project = [
     {
         path: "dashBoard",
+        name: 'dashBoard',
         component: () => import("@/views/dashBoard/index.vue"),
         meta: {
-            title: "dashBoard"
+            title: "dashBoard",
+            icon: 'HomeFilled',
+            isHide: true
         }
     }
 ];

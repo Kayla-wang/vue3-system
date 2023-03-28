@@ -9,7 +9,7 @@
         "icon": "HomeFilled",
         "title": "首页",
         "isLink": "",
-        "isHide": false
+        "isHide": true
       },
       "children": [{
         "path": "/home/dashBoard",
@@ -19,7 +19,7 @@
           "icon": "HomeFilled",
           "title": "dashBoard",
           "isLink": "",
-          "isHide": false
+          "isHide": true
         }
       }]
     }

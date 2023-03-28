@@ -20,6 +20,11 @@ export const dynamicRouter = [
         path: "/home",
         name: 'home',
         component: () => import("@/layout/template/default.vue"),
+        meta: {
+            icon: 'HomeFilled',
+            title: '首页',
+            isHide: true
+        },
         children: project
     }
 ];

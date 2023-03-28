@@ -17,7 +17,6 @@ export const GlobalStore = defineStore({
     actions: {
         async getAuthMenuList() {
             const { data } = await getAuthMenuListApi();
-            console.log(data)
             this.authMenuList = data;
         }
     }
