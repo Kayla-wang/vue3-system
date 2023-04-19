@@ -21,7 +21,7 @@ export const dynamicRouter = [
         name: 'home',
         component: () => import("@/layout/template/default.vue"),
         meta: {
-            icon: 'HomeFilled',
+            icon: '',
             title: '首页',
             isHide: true
         },

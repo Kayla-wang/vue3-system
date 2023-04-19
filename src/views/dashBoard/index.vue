@@ -1,6 +1,5 @@
 <template>
    <div id="main">
-     111
    </div>
 <!--  <svg-icon name="xianxingdaoyu" />-->
 </template>

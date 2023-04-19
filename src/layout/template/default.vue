@@ -24,9 +24,14 @@ import Menu from '@/layout/components/navMenu.vue'
   width: 100%;
   display: flex;
 }
+.header {
+  height: 70px;
+  background: #333333;
+}
 .aside {
   width:180px;
-  height: calc( 100vh - 50px);
+  height: calc( 100vh - 70px);
+  background: #545c64;
 }
 .main {
   flex:1;
