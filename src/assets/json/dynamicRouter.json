@@ -7,17 +7,59 @@
       "component": "/home",
       "meta": {
         "icon": "HomeFilled",
-        "title": "首页",
+        "title": "home",
         "isLink": "",
-        "isHide": false
+        "isHide": true
       },
       "children": [{
         "path": "/home/dashBoard",
-        "name": "home",
+        "name": "dashBoard",
         "component": "/home/dashBoard",
         "meta": {
           "icon": "HomeFilled",
           "title": "dashBoard",
+          "isLink": "",
+          "isHide": true
+        }
+      }]
+    },
+    {
+      "path": "/system",
+      "name": "system",
+      "component": "system",
+      "meta": {
+        "icon": "Setting",
+        "title": "system",
+        "isLink": "",
+        "isHide": false
+      },
+      "children": [{
+        "path": "/system/menu",
+        "name": "menu",
+        "component": "/system/menu",
+        "meta": {
+          "icon": "Memo",
+          "title": "menu",
+          "isLink": "",
+          "isHide": false
+        }
+      }, {
+        "path": "/system/role",
+        "name": "role",
+        "component": "/system/role",
+        "meta": {
+          "icon": "Unlock",
+          "title": "role",
+          "isLink": "",
+          "isHide": false
+        }
+      }, {
+        "path": "/system/user",
+        "name": "user",
+        "component": "/system/user",
+        "meta": {
+          "icon": "User",
+          "title": "user",
           "isLink": "",
           "isHide": false
         }

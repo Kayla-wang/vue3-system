@@ -1,35 +1,40 @@
 export const project = [
     {
-        path: "dashBoard",
-        name: 'dashBoard',
-        component: () => import("@/views/dashBoard/index.vue"),
-        meta: {
-            title: "dashBoard",
-            icon: '',
-            isHide: true
-        }
-    },
-    {
-        path: "system",
+        path: "/system",
         name: 'system',
-        component: () => import("@/views/system/index.vue"),
+        component: () => import("@/layout/template/default.vue"),
         meta: {
             title: "系统配置",
-            icon: '',
-            isHide: true
+            icon: ''
         },
-        children: [
+        children:[
             {
                 path: "menu",
                 name: 'menu',
                 component: () => import("@/views/system/menu/index.vue"),
                 meta: {
-                    title: "菜单",
-                    icon: '',
-                    isHide: true
+                    title: "menu",
+                    icon: ''
+                }
+            },
+            {
+                path: "role",
+                name: 'role',
+                component: () => import("@/views/system/role/index.vue"),
+                meta: {
+                    title: "role",
+                    icon: ''
+                }
+            },
+            {
+                path: "user",
+                name: 'user',
+                component: () => import("@/views/system/user/index.vue"),
+                meta: {
+                    title: "user",
+                    icon: ''
                 }
             }
         ]
     }
-
 ];

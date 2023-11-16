@@ -22,9 +22,17 @@ export const dynamicRouter = [
         component: () => import("@/layout/template/default.vue"),
         meta: {
             icon: '',
-            title: '首页',
-            isHide: true
+            title: '首页'
         },
-        children: project
-    }
+        children:[{
+            path: "dashBoard",
+            name: 'dashBoard',
+            component: () => import("@/views/dashBoard/index.vue"),
+            meta: {
+                title: "dashBoard",
+                icon: ''
+            }
+          }]
+    },
+    ...project
 ];
