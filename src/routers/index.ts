@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import { errorRouter } from "@/routers/errorRouter";
-import { dynamicRouter } from "@/routers/modules/index";
+import { initDynamicRouter } from "@/routers/modules/dynamicRouter";
 
 // 将匹配 /users/posva 而非：
 // - /users/posva/ 当 strict: true
@@ -14,15 +13,6 @@ const router = createRouter({
 });
 
 router.beforeEach(async (to, from) => {
-    // if (
-    //     // 检查用户是否已登录
-    //     !isAuthenticated &&
-    //     // ❗️ 避免无限重定向
-    //     to.name !== 'Login'
-    // ) {
-    //     // 将用户重定向到登录页面
-    //     return { name: 'Login' }
-    // }
 })
 
 export default router;

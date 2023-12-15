@@ -1,35 +1,45 @@
-<template>
-  <el-table :data="tableData" style="width: 100%">
-    <el-table-column prop="date" label="Date" width="180" />
-    <el-table-column prop="name" label="Name" width="180" />
-    <el-table-column prop="address" label="Address" />
-  </el-table>
-</template>
-
 <script setup lang="ts">
-const tableData = [
+import { ref , h } from 'vue';
+
+/**
+ * Implement a functional component :
+ * 1. Render the list elements (ul/li) with the list data
+ * 2. Change the list item text color to red when clicked.
+ */
+const ListComponent = (props, { emit }) => {
+  const activeIndex = props['active-index'];
+
+  const items = props.list.map((item, index) => {
+    return h('li', {
+      style: { color: activeIndex=== index ? 'red' : 'black' },
+      onClick: () => {
+        emit('toggle', index)
+      }
+    }, item.name)
+  });
+
+  return h('ul',  items)
+}
+
+const list = [
   {
-    date: '2016-05-03',
-    name: 'Tom',
-    address: 'No. 189, Grove St, Los Angeles',
+    name: 'John',
   },
   {
-    date: '2016-05-02',
-    name: 'Tom',
-    address: 'No. 189, Grove St, Los Angeles',
+    name: 'Doe',
   },
   {
-    date: '2016-05-04',
-    name: 'Tom',
-    address: 'No. 189, Grove St, Los Angeles',
+    name: 'Smith',
   },
-  {
-    date: '2016-05-01',
-    name: 'Tom',
-    address: 'No. 189, Grove St, Los Angeles',
-  },
-]
+];
+
+const activeIndex = ref(0);
+
+function toggle(index: number) {
+  activeIndex.value = index;
+}
 </script>
 
-<style scoped>
-</style>
+<template>
+  <list-component :list="list" :active-index="activeIndex" @toggle="toggle" />
+</template>

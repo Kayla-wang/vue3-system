@@ -34,8 +34,7 @@ import { onMounted } from 'vue'
 onMounted(() => {
   // 接下来的使用就跟之前一样，初始化图表，设置配置项
   // 基于准备好的dom，初始化echarts实例
-  // initData()
-
+  initData()
 })
 
 </script>
