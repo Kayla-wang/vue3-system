@@ -1,5 +1,5 @@
 import router from "@/routers/index";
-// import { getFlatArr } from "@/utils/util";
+import { getFlatArr } from "@/utils/util";
 import { LOGIN_URL } from "@/config/config";
 import { ElNotification } from "element-plus";
 import { AuthStore } from "@/stores/modules/auth";
@@ -16,19 +16,19 @@ export const initDynamicRouter = async () => {
         // 1.获取菜单列表 && 按钮权限（可合并到一个接口获取，根据后端不同可自行改造）
         const authStore = AuthStore();
         await authStore.getAuthMenuList();
-        await authStore.getAuthButtonList();
+        // await authStore.getAuthButtonList();
 
         // 2.判断当前用户有没有菜单权限
-        if (!authStore.authMenuListGet.length) {
-            ElNotification({
-                title: "无权访问",
-                message: "当前账号无任何菜单权限，请联系系统管理员！",
-                type: "warning",
-                duration: 3000
-            });
-            router.replace(LOGIN_URL);
-            return Promise.reject("No permission");
-        }
+        // if (!authStore.authMenuListGet.length) {
+        //     ElNotification({
+        //         title: "无权访问",
+        //         message: "当前账号无任何菜单权限，请联系系统管理员！",
+        //         type: "warning",
+        //         duration: 3000
+        //     });
+        //     router.replace(LOGIN_URL);
+        //     return Promise.reject("No permission");
+        // }
 
         // 3.添加动态路由
         let dynamicRouter = getFlatArr(JSON.parse(JSON.stringify(authStore.authMenuListGet)));

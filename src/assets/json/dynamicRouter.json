@@ -9,7 +9,8 @@
         "icon": "HomeFilled",
         "title": "home",
         "isLink": "",
-        "isHide": true
+        "isHide": true,
+        "isFull": false
       },
       "children": [{
         "path": "/home/dashBoard",
@@ -19,7 +20,8 @@
           "icon": "HomeFilled",
           "title": "dashBoard",
           "isLink": "",
-          "isHide": true
+          "isHide": true,
+          "isFull": false
         }
       }]
     },
@@ -31,7 +33,8 @@
         "icon": "Setting",
         "title": "system",
         "isLink": "",
-        "isHide": false
+        "isHide": false,
+        "isFull": false
       },
       "children": [{
         "path": "/system/menu",
@@ -41,7 +44,8 @@
           "icon": "Memo",
           "title": "menu",
           "isLink": "",
-          "isHide": false
+          "isHide": false,
+          "isFull": false
         }
       }, {
         "path": "/system/role",
@@ -51,7 +55,8 @@
           "icon": "Unlock",
           "title": "role",
           "isLink": "",
-          "isHide": false
+          "isHide": false,
+          "isFull": false
         }
       }, {
         "path": "/system/user",
@@ -61,7 +66,8 @@
           "icon": "User",
           "title": "user",
           "isLink": "",
-          "isHide": false
+          "isHide": false,
+          "isFull": false
         }
       }]
     }

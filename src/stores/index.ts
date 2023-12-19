@@ -1,7 +1,7 @@
 import { defineStore, createPinia } from "pinia"
 import router from "@/routers/index"
 import { GlobalState } from "@/stores/interface"
-import { getAuthMenuListApi } from "@/api/login";
+import { getAuthMenuListApi } from "@/api/modules/login";
 import { getShowMenuList } from "@/utils/util";
 // defineStore 调用后返回一个函数，调用该函数获得 Store 实体
 export const GlobalStore = defineStore({
