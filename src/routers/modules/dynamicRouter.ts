@@ -34,7 +34,7 @@ export const initDynamicRouter = async () => {
         let dynamicRouter = getFlatArr(JSON.parse(JSON.stringify(authStore.authMenuListGet)));
         dynamicRouter.forEach((item: any) => {
             if (item.children) delete item.children;
-            if (item.component) item.component = modules["/src/views" + item.component + ".vue"];
+            if (item.component) item.component = modules["../../views" + item.component + ".vue"];
             if (item.meta.isFull) {
                 router.addRoute(item);
             } else {

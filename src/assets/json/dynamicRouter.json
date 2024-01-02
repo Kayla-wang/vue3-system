@@ -2,33 +2,21 @@
   "code": 200,
   "data": [
     {
-      "path": "/home",
+      "path": "/home/index",
       "name": "home",
-      "component": "/home",
+      "component": "/dashBoard/index",
       "meta": {
         "icon": "HomeFilled",
         "title": "home",
         "isLink": "",
         "isHide": true,
         "isFull": false
-      },
-      "children": [{
-        "path": "/home/dashBoard",
-        "name": "dashBoard",
-        "component": "/home/dashBoard",
-        "meta": {
-          "icon": "HomeFilled",
-          "title": "dashBoard",
-          "isLink": "",
-          "isHide": true,
-          "isFull": false
-        }
-      }]
+      }
     },
     {
       "path": "/system",
       "name": "system",
-      "component": "system",
+      "redirect": "/system/menu/index",
       "meta": {
         "icon": "Setting",
         "title": "system",
@@ -39,7 +27,7 @@
       "children": [{
         "path": "/system/menu",
         "name": "menu",
-        "component": "/system/menu",
+        "component": "/system/menu/index",
         "meta": {
           "icon": "Memo",
           "title": "menu",
@@ -50,7 +38,7 @@
       }, {
         "path": "/system/role",
         "name": "role",
-        "component": "/system/role",
+        "component": "/system/role/index",
         "meta": {
           "icon": "Unlock",
           "title": "role",
@@ -61,7 +49,7 @@
       }, {
         "path": "/system/user",
         "name": "user",
-        "component": "/system/user",
+        "component": "/system/user/index",
         "meta": {
           "icon": "User",
           "title": "user",
