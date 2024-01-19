@@ -1,6 +1,7 @@
 <template>
-   <div id="main">
-   </div>
+  <h1 class="text-4xl text-green-700 text-center font-semibold">Hello Tailwind</h1>
+<!--   <div id="main">-->
+<!--   </div>-->
 <!--  <svg-icon name="xianxingdaoyu" />-->
 </template>
 
