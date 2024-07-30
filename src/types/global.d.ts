@@ -19,3 +19,4 @@ declare namespace Menu {
         isKeepAlive: boolean;
     }
 }
+declare module "@tsparticles/vue3";

@@ -18,13 +18,24 @@ import "element-plus/theme-chalk/dark/css-vars.css";
 // import "@/styles/element.scss";
 import 'virtual:svg-icons-register'
 
+import Particles from "@tsparticles/vue3";
+import { loadFull } from "tsparticles";
+import { loadSlim } from "@tsparticles/slim";
+
 const app = createApp(App)
 // 注册element Icons组件
 Object.keys(Icons).forEach(key => {
     app.component(key, Icons[key as keyof typeof Icons]);
 })
+
 app.use(pinia)
 app.use(router)
 app.use(ElementPlus)
+app.use(Particles, {
+    init: async engine => {
+        await loadSlim(engine);
+        await loadFull(engine);
+    },
+})
 app.component('svg-icon', svgIcon)
 app.mount('#app')
